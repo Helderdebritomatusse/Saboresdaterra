@@ -1,0 +1,347 @@
+/********** Template CSS **********/
+:root {
+  --primary: #fea116; /* Cor principal usada no tema */
+  --light: #f1f8ff; /* Cor clara para fundos ou textos */
+  --dark: #0f172b; /* Cor escura para fundos ou textos */
+}
+
+.ff-secondary {
+  font-family: "Mulish", serif; /* Fonte */
+}
+
+.fw-medium {
+  font-weight: 600 !important; /* Peso médio de fonte */
+}
+
+.fw-semi-bold {
+  font-weight: 700 !important; /* Peso semi-negrito */
+}
+
+/* Botão de voltar ao topo */
+.back-to-top {
+  position: fixed; /* Posição fixa na tela */
+  display: none; /* Escondido por padrão */
+  right: 45px; /* Distância da direita */
+  bottom: 45px; /* Distância do fundo */
+  z-index: 99; /* Fica acima de outros elementos */
+}
+
+/*** Botões ***/
+.btn {
+  font-family: "Nunito", sans-serif; /* Fonte simples */
+  font-weight: 500; /* Peso de fonte médio */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  transition: 0.5s; /* Transição suave */
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #ffffff; /* Texto branco */
+}
+
+/* Botões quadrados com tamanhos variados */
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+/* Alinhamento e formato dos botões quadrados */
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  font-weight: normal;
+  border-radius: 2px; /* Bordas levemente arredondadas */
+}
+
+/*** Barra de navegação (Navbar) ***/
+/* Links da navbar com estilo escuro */
+.navbar-dark .navbar-nav .nav-link {
+  position: relative;
+  margin-left: 25px;
+  padding: 35px 0;
+  font-size: 15px;
+  color: var(--light) !important; /* Cor clara */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+/* Links com hover ou ativos ficam com a cor primária */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Tamanho do logotipo muda com rolagem */
+.navbar-dark .navbar-brand img {
+  max-height: 60px;
+  transition: 0.5s;
+}
+.sticky-top.navbar-dark .navbar-brand img {
+  max-height: 45px;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-collapse {
+    /* Ajuste de margens e bordas no menu */
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    margin-left: 0;
+  }
+}
+
+/* Layout desktop (largura maior) */
+@media (min-width: 992px) {
+  .navbar-dark {
+    /* Navbar transparente */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: transparent !important;
+  }
+  .sticky-top.navbar-dark {
+    /* Navbar fixa e escura */
+    position: fixed;
+    background: var(--dark) !important;
+  }
+}
+
+/*** Cabeçalho Hero ***/
+/* Estilização do cabeçalho */
+.hero-header {
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
+    url(../img/bg-hero.jpg); /* Fundo com imagem e gradiente */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Imagem cobre o espaço */
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*** Títulos de seção ***/
+/* Estilização do título das seções */
+.section-title {
+  position: relative;
+  display: inline-block; /* Exibição em linha */
+}
+
+/* Linhas decorativas antes e depois do título */
+.section-title::before {
+  position: absolute;
+  content: ""; /* Cria um elemento visual */
+  width: 45px; /* Comprimento da linha */
+  height: 2px; /* Espessura da linha */
+  top: 50%; /* Centralizado verticalmente */
+  left: -55px; /* Posicionado à esquerda */
+  background: var(--primary); /* Cor primária */
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px; /* Posicionado à direita */
+  background: var(--primary);
+}
+
+/* Remoção das linhas decorativas dependendo do alinhamento */
+.section-title.text-start::before,
+.section-title.text-end::after {
+  display: none;
+}
+
+/*** Serviços ***/
+/* Estilização para itens de serviço */
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  transition: 0.5s; /* Transição suave */
+}
+
+/* Mudança de fundo ao passar o mouse */
+.service-item:hover {
+  background: var(--primary); /* Fundo com cor primária */
+}
+
+/* Transição para todos os elementos internos */
+.service-item * {
+  transition: 0.5s;
+}
+
+/* Alteração de cor dos elementos internos no hover */
+.service-item:hover * {
+  color: var(--light) !important; /* Texto com cor clara */
+}
+
+/*** Menu de Comidas ***/
+/* Estilização para itens ativos no menu de comidas */
+.nav-pills .nav-item .active {
+  border-bottom: 2px solid var(--primary); /* Linha inferior destacada */
+}
+
+/*** Equipe ***/
+/* Estilização dos itens de equipe */
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  transition: 0.5s; /* Transição suave */
+}
+
+/* Efeito de zoom nas imagens ao passar o mouse */
+.team-item:hover img {
+  transform: scale(1.1); /* Aumenta o tamanho */
+}
+
+/* Ajuste de altura no hover */
+.team-item:hover {
+  height: 100%;
+}
+
+/* Botões com bordas arredondadas */
+.team-item .btn {
+  border-radius: 38px 38px 0 0;
+}
+
+/*** Depoimentos ***/
+/* Estilização de carrossel de depoimentos */
+.testimonial-carousel .owl-item .testimonial-item {
+  transition: 0.5s; /* Transição suave */
+}
+
+/* Estilo do item central no carrossel */
+.testimonial-carousel .owl-item.center .testimonial-item {
+  background: var(--primary) !important; /* Fundo com cor primária */
+  border-color: var(--primary) !important;
+}
+
+/* Alteração de cor nos textos do item central */
+.testimonial-carousel .owl-item.center .testimonial-item * {
+  color: var(--light) !important; /* Texto claro */
+}
+
+/* Dots (pontos) do carrossel */
+.testimonial-carousel .owl-dots {
+  margin-top: 24px; /* Espaçamento superior */
+  display: flex;
+  justify-content: center; /* Centralizados horizontalmente */
+}
+
+.testimonial-carousel .owl-dot {
+  width: 15px; /* Tamanho do ponto */
+  height: 15px;
+  border: 1px solid #cccccc; /* Borda cinza */
+  border-radius: 15px; /* Forma arredondada */
+}
+
+/* Destaque para o ponto ativo */
+.testimonial-carousel .owl-dot.active {
+  background: var(--primary); /* Cor primária */
+}
+
+/*** Footer ***/
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.rating .star {
+  font-size: 20px;
+  color: #ccc; /* Cor padrão */
+  transition: color 0.3s;
+}
+
+.rating .star:hover,
+.rating .star:hover ~ .star {
+  color: var(--primary); /* Cor ao passar o mouse */
+}
+
+.rating .star.selected,
+.rating .star.selected ~ .star {
+  color: var(--primary); /* Cor após seleção */
+}

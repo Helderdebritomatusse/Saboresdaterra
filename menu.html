@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sabores da Terra</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icones utilizados -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bibliotecas Utilizadas -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- (INICIO) Navbar e Parte Inicial do Website -->
+      <div class="container-xxl position-relative p-0">
+        <!-- Classes do Bootstrap para navbar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0"
+        >
+          <a href="./index.html" class="navbar-brand p-0">
+            <h1 class="text-primary m-0">
+              <i class="fa fa-utensils me-3"></i>Sabores da Terra
+            </h1>
+          </a>
+          <!-- Botão para abrir Navbar em telas pequenas -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <!-- Opcoes da Navbar -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+              <a href="index.html" class="nav-item nav-link active">INICO</a>
+              <a href="sobre.html" class="nav-item nav-link">SOBRE</a>
+              <a href="menu.html" class="nav-item nav-link">MENU</a>
+              <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            <a href="./reservas.html" class="btn btn-primary py-2 px-4"
+              >RESERVA</a
+            >
+          </div>
+        </nav>
+
+        <!-- Descrição da Página Menu -->
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+          <!-- Para descrever o caminho Inicio > Menu -->
+          <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3">Menu</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item">
+                  <a href="./index.html">Inicio</a>
+                </li>
+                <li
+                  class="breadcrumb-item text-white active"
+                  aria-current="page"
+                >
+                  Menu
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- (FINAL) Navbar e Parte Inicial do Website -->
+
+      <!-- (INICIO) MENU Section -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <!-- Titulo da Secção MENU -->
+          <div class="text-center">
+            <h5
+              class="section-title ff-secondary text-center text-primary fw-normal"
+            >
+              Menu
+            </h5>
+            <h1 class="mb-5">Nossos Destaques</h1>
+          </div>
+
+          <!-- Opcoes de Menu -->
+          <div class="tab-class text-center">
+            <ul
+              class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
+            >
+              <!-- Opcoes de cada categoria do MENU - Entradas, Pratos Principais e Sobremesas -->
+              <!-- Entradas -->
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                  data-bs-toggle="pill"
+                  href="#tab-1"
+                >
+                  <i class="fa fa-hamburger fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Popular</small>
+                    <h6 class="mt-n1 mb-0">Entradas</h6>
+                  </div>
+                </a>
+              </li>
+              <!-- Pratos Principais -->
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-2"
+                >
+                  <i class="fa fa-utensils fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Especial</small>
+                    <h6 class="mt-n1 mb-0">Pratos Principais</h6>
+                  </div>
+                </a>
+              </li>
+              <!-- Sobremesas -->
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-3"
+                >
+                  <i class="fa fa-ice-cream fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Delicioso</small>
+                    <h6 class="mt-n1 mb-0">Sobremesas</h6>
+                  </div>
+                </a>
+              </li>
+              <!-- Bebidas -->
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-4"
+                >
+                  <i class="fa fa-wine-glass fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Refrescante</small>
+                    <h6 class="mt-n1 mb-0">Bebidas</h6>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Cada Opcao to Menu com base na categoria -->
+            <div class="tab-content">
+              <!-- Categoria 1 - Entradas -->
+              <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                  <!-- Pratos do Menu -->
+                  <div class="col-lg-6 menu-item vegetariano">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-1.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-2.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-3.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-4.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-5.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item sem-gluten">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-6.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-7.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item vegetariano">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-8.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Categoria 2 - Pratos Principais -->
+              <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <!-- Pratos do Menu -->
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-1.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item vegetariano">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-2.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item sem-gluten">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-3.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-4.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item vegetariano">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-5.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item pratos-do-dia">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-6.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item sem-gluten">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-7.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item pratos-do-dia">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-8.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Categoria 3 - Sobremesas -->
+              <div id="tab-3" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <!-- Pratos do Menu -->
+                  <div class="col-lg-6 menu-item pratos-do-dia">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-1.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-2.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item pratos-do-dia">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-3.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-4.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 menu-item vegetariano">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-5.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-6.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-7.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-8.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Categoria 4 - Bebidas -->
+              <div id="tab-4" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <!-- Pratos do Menu -->
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-1.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-2.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-3.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-4.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-5.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-6.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-7.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="img/menu-8.jpg"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Burger</span>
+                          <span class="text-primary">500 Mts</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Ipsum ipsum clita erat amet dolor justo diam</small
+                        >
+                        <div class="rating mt-2">
+                          <span class="star" data-value="5">&#9733;</span>
+                          <span class="star" data-value="4">&#9733;</span>
+                          <span class="star" data-value="3">&#9733;</span>
+                          <span class="star" data-value="2">&#9733;</span>
+                          <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- (FINAL) MENU Section -->
+
+      <!-- (INICIO) FOOTER Section -->
+      <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+          <div class="row g-5">
+            <!-- Opcoes do Footer -->
+            <!-- Coluna 1 -->
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Sabores da Terra
+              </h4>
+              <a class="btn btn-link" href="">Sobre Nós</a>
+              <a class="btn btn-link" href="">Contacto</a>
+              <a class="btn btn-link" href="">Reserva</a>
+            </div>
+            <!-- Coluna 2 -->
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Contacto
+              </h4>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Av. Rio Limpopo, Alto
+                Maé B, Maputo, Moçambique
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+258 842123456
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>saboresdaterra@gmail.com
+              </p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Coluna 3 -->
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Horários
+              </h4>
+              <h5 class="text-light fw-normal">Segunda - Sábado</h5>
+              <p>09h - 21h</p>
+              <h5 class="text-light fw-normal">Domingo</h5>
+              <p>10h - 20h</p>
+            </div>
+            <!-- Coluna 4 -->
+            <div class="col-lg-3 col-md-6">
+              <h4
+                class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+              >
+                Newsletter
+              </h4>
+              <p>Inscreva-se para receber as nossas novidades</p>
+              <div class="position-relative mx-auto" style="max-width: 400px">
+                <input
+                  class="form-control border-primary w-100 py-3 ps-4 pe-5"
+                  type="text"
+                  placeholder="Seu email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Inscreva-se
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-12 text-center text-md-center mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">Sabores da Terra</a>,
+                Todos os Direitos Reservados.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- (FINAL) FOOTER Section -->
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
